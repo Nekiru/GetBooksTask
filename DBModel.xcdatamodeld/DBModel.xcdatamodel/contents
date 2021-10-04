@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Book" representedClassName="Book" syncable="YES" codeGenerationType="class">
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="bookDescription" optional="YES" attributeType="String"/>
+        <attribute name="isbn" optional="YES" attributeType="String"/>
+        <attribute name="publicationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="titile" optional="YES" attributeType="String"/>
+        <relationship name="reviews" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Review" inverseName="book" inverseEntity="Review"/>
+    </entity>
+    <entity name="Review" representedClassName="Review" syncable="YES" codeGenerationType="class">
+        <attribute name="body" optional="YES" attributeType="String"/>
+        <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="reviews" inverseEntity="Book"/>
+    </entity>
+    <elements>
+        <element name="Book" positionX="-163.9945678710938" positionY="195.9580688476562" width="128" height="28"/>
+        <element name="Review" positionX="-36" positionY="45" width="128" height="28"/>
+    </elements>
+</model>
