@@ -31,7 +31,7 @@
             <connections>
                 <outlet property="activityIndicator" destination="baC-8m-DOq" id="tZA-fO-Hzo"/>
             </connections>
-            <point key="canvasLocation" x="131.8840579710145" y="89.732142857142847"/>
+            <point key="canvasLocation" x="-657" y="-2"/>
         </tableViewCell>
     </objects>
 </document>

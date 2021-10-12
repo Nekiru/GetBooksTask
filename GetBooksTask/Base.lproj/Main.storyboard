@@ -81,7 +81,7 @@
                                 <color key="shadowColor" systemColor="linkColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WqI-gf-aHk">
-                                <rect key="frame" x="0.0" y="209" width="286" height="142"/>
+                                <rect key="frame" x="0.0" y="209" width="308" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <attributedString key="attributedText">
