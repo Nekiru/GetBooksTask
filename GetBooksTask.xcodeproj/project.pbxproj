@@ -17,8 +17,6 @@
 		D7A3152D2705EA8E00DACD4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A3152B2705EA8E00DACD4E /* Main.storyboard */; };
 		D7A3152F2705EA8E00DACD4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A3152E2705EA8E00DACD4E /* Assets.xcassets */; };
 		D7A315322705EA8E00DACD4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A315302705EA8E00DACD4E /* LaunchScreen.storyboard */; };
-		D7A3153D2705EA8F00DACD4E /* GetBooksTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A3153C2705EA8F00DACD4E /* GetBooksTaskTests.swift */; };
-		D7A315482705EA8F00DACD4E /* GetBooksTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A315472705EA8F00DACD4E /* GetBooksTaskUITests.swift */; };
 		D7A315562705EB3100DACD4E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A315552705EB3100DACD4E /* Model.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,11 +51,7 @@
 		D7A315312705EA8E00DACD4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7A315332705EA8E00DACD4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7A315382705EA8F00DACD4E /* GetBooksTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetBooksTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7A3153C2705EA8F00DACD4E /* GetBooksTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBooksTaskTests.swift; sourceTree = "<group>"; };
-		D7A3153E2705EA8F00DACD4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7A315432705EA8F00DACD4E /* GetBooksTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetBooksTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7A315472705EA8F00DACD4E /* GetBooksTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBooksTaskUITests.swift; sourceTree = "<group>"; };
-		D7A315492705EA8F00DACD4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7A315552705EB3100DACD4E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				D7A315242705EA8E00DACD4E /* GetBooksTask */,
-				D7A3153B2705EA8F00DACD4E /* GetBooksTaskTests */,
-				D7A315462705EA8F00DACD4E /* GetBooksTaskUITests */,
 				D7A315232705EA8E00DACD4E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,24 +115,6 @@
 				D7A315332705EA8E00DACD4E /* Info.plist */,
 			);
 			path = GetBooksTask;
-			sourceTree = "<group>";
-		};
-		D7A3153B2705EA8F00DACD4E /* GetBooksTaskTests */ = {
-			isa = PBXGroup;
-			children = (
-				D7A3153C2705EA8F00DACD4E /* GetBooksTaskTests.swift */,
-				D7A3153E2705EA8F00DACD4E /* Info.plist */,
-			);
-			path = GetBooksTaskTests;
-			sourceTree = "<group>";
-		};
-		D7A315462705EA8F00DACD4E /* GetBooksTaskUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D7A315472705EA8F00DACD4E /* GetBooksTaskUITests.swift */,
-				D7A315492705EA8F00DACD4E /* Info.plist */,
-			);
-			path = GetBooksTaskUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7A3153D2705EA8F00DACD4E /* GetBooksTaskTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7A315482705EA8F00DACD4E /* GetBooksTaskUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

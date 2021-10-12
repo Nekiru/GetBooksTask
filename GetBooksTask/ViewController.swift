@@ -6,7 +6,8 @@ class ViewController: UIViewController {
     var isLoading = false
     var books: Books = []
     var currentPage = 0
-        
+    var selectedBook: Book?
+    
     func updateBooks(books: Books?){
         isLoading = false
         if books != nil{
@@ -66,11 +67,15 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
         }
     }
     
-    //глобальная переменная для выбранной книги
-    static var selectedBook: Book?
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        ViewController.selectedBook = self.books[indexPath.row]
+        self.selectedBook = self.books[indexPath.row]
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let bvc = storyboard.instantiateViewController(identifier: "BookViewController") as? BookViewController
+        {
+            bvc.selectedBook = self.books[indexPath.row]
+            show(bvc, sender: nil)
+        }
     }
     
     //вызов подгрузки следующей страницы при прокрутке вниз
