@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61C68663B7CF091F278285F5 /* Pods_GetBooksTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AC05CCDD8BD86ED8E8A627 /* Pods_GetBooksTask.framework */; };
 		D707A1792706E31800238927 /* NetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D707A1782706E31800238927 /* NetManager.swift */; };
 		D707A180270711DD00238927 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D707A17E270711DD00238927 /* LoadingCell.swift */; };
 		D707A181270711DD00238927 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D707A17F270711DD00238927 /* LoadingCell.xib */; };
@@ -38,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		915387FB46463CB645CEEE22 /* Pods-GetBooksTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetBooksTask.debug.xcconfig"; path = "Target Support Files/Pods-GetBooksTask/Pods-GetBooksTask.debug.xcconfig"; sourceTree = "<group>"; };
+		9CA3BEC45AC64B1E651F749F /* Pods-GetBooksTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetBooksTask.release.xcconfig"; path = "Target Support Files/Pods-GetBooksTask/Pods-GetBooksTask.release.xcconfig"; sourceTree = "<group>"; };
+		C5AC05CCDD8BD86ED8E8A627 /* Pods_GetBooksTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetBooksTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D707A1782706E31800238927 /* NetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetManager.swift; sourceTree = "<group>"; };
 		D707A17E270711DD00238927 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
 		D707A17F270711DD00238927 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C68663B7CF091F278285F5 /* Pods_GetBooksTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,11 +85,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1224D8355C64A014368AB3B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5AC05CCDD8BD86ED8E8A627 /* Pods_GetBooksTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B98A9234137730C8863D3F58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				915387FB46463CB645CEEE22 /* Pods-GetBooksTask.debug.xcconfig */,
+				9CA3BEC45AC64B1E651F749F /* Pods-GetBooksTask.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D7A315192705EA8E00DACD4E = {
 			isa = PBXGroup;
 			children = (
 				D7A315242705EA8E00DACD4E /* GetBooksTask */,
 				D7A315232705EA8E00DACD4E /* Products */,
+				B98A9234137730C8863D3F58 /* Pods */,
+				1224D8355C64A014368AB3B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7A3154C2705EA8F00DACD4E /* Build configuration list for PBXNativeTarget "GetBooksTask" */;
 			buildPhases = (
+				B00E6F0C5149455B890D2BCB /* [CP] Check Pods Manifest.lock */,
 				D7A3151E2705EA8E00DACD4E /* Sources */,
 				D7A3151F2705EA8E00DACD4E /* Frameworks */,
 				D7A315202705EA8E00DACD4E /* Resources */,
+				5DB2D9D8D13E64F648268367 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,6 +269,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DB2D9D8D13E64F648268367 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GetBooksTask/Pods-GetBooksTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GetBooksTask/Pods-GetBooksTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GetBooksTask/Pods-GetBooksTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B00E6F0C5149455B890D2BCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GetBooksTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D7A3151E2705EA8E00DACD4E /* Sources */ = {
@@ -425,6 +494,7 @@
 		};
 		D7A3154D2705EA8F00DACD4E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 915387FB46463CB645CEEE22 /* Pods-GetBooksTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,6 +513,7 @@
 		};
 		D7A3154E2705EA8F00DACD4E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CA3BEC45AC64B1E651F749F /* Pods-GetBooksTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
