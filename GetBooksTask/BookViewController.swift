@@ -9,7 +9,6 @@ class BookViewController: UIViewController {
     var selectedBook: Book?
     override func viewDidLoad() {
         super.viewDidLoad()
-        //let selectedBook = ViewController.selectedBook
         if self.selectedBook != nil{
             titleLabel.text = selectedBook?.title
             authorLabel.text = selectedBook?.author

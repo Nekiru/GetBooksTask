@@ -8,15 +8,15 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0D48BE65-CAD1-46F7-B0AB-F5149CBEA376"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             nameForDebugger = "a"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GetBooksTask/BookViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
