@@ -17,19 +17,3 @@ struct Book: Codable {
 }
 
 typealias Books = [Book]
-
-class DataDecoder<T: Codable>{
-    static func DecodeData(data: Data) -> T? {
-        let decoder =  JSONDecoder()
-        //чтобы правильно декодировались даты
-        decoder.dateDecodingStrategy = .iso8601
-        do{
-            let decodedData = try decoder.decode(T?.self, from: data)
-            return decodedData
-        }
-        catch{
-            print("Decoding error: \(error.localizedDescription)")
-            return nil
-        }
-    }
-}
